@@ -28,6 +28,7 @@ How did I spend my money last month?
 How much did I spend on groceries?
 ```
 
+[![📟](https://raw.githubusercontent.com/MoazIrfan/Personal-Finance-Coach-AI-Agent/main/.github/Personal%20Finance%20Coach.gif)](./../../)
 
 <br>
 
