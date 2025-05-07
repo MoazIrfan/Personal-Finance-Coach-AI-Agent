@@ -1,0 +1,22 @@
+date,category,merchant,amount
+2025-04-29,Grocery,Walmart,75.23
+2025-04-30,Restaurant,Pizza Hut,40.50
+2025-05-01,Transport,Uber,18.00
+2025-05-02,Grocery,Whole Foods,120.15
+2025-05-03,Entertainment,Netflix,15.99
+2025-05-04,Grocery,Trader Joe's,90.00
+2025-05-05,Restaurant,McDonald's,25.50
+2025-05-06,Transport,Lyft,22.30
+2025-05-07,Utilities,Electric Company,85.00
+2025-05-08,Entertainment,Spotify,10.99
+2025-05-09,Healthcare,Pharmacy,35.75
+2025-05-10,Travel,Airbnb,200.00
+2025-05-11,Grocery,Costco,150.00
+2025-05-12,Restaurant,Starbucks,12.45
+2025-05-13,Transport,Gas Station,50.00
+2025-05-14,Utilities,Water Company,45.00
+2025-05-15,Entertainment,Movie Theater,30.00
+2025-05-16,Grocery,Farmers Market,60.00
+2025-05-17,Healthcare,Dentist,120.00
+2025-05-18,Travel,Train Tickets,80.00
+2025-05-19,Restaurant,Burger King,15.00
