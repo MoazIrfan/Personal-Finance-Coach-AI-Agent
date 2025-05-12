@@ -7,6 +7,7 @@ import { RecursiveCharacterTextSplitter } from 'langchain/text_splitter';
 import { Document } from '@langchain/core/documents';
 import * as fs from 'fs/promises';
 import * as dotenv from 'dotenv';
+import readline from 'readline';
 
 dotenv.config();
 
@@ -78,11 +79,32 @@ async function main() {
     maxIterations: 10,
   });
 
-  const input = `How did I spend my money last month?`;
+  const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout,
+  });
 
-  const result = await executor.invoke({ input });
-  console.log('\n💸 Spending Summary 💸\n');
-  console.log(result.output);
+  const askQuestion = (query) => {
+    return new Promise((resolve) => {
+      rl.question(query, resolve);
+    });
+  };
+
+  console.log('\n💬 Ask me anything about your transactions. Type "exit" to quit.\n');
+
+  while (true) {
+    const userPrompt = await askQuestion('You: ');
+    if (userPrompt.toLowerCase() === 'exit') {
+      console.log('👋 Goodbye!');
+      break;
+    }
+
+    const result = await executor.invoke({ input: userPrompt });
+    console.log('\n💸 Spending Summary 💸\n');
+    console.log(result.output + '\n');
+  }
+
+  rl.close();
 }
 
 main();
